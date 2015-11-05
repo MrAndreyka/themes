@@ -1,0 +1,81 @@
+html, body {
+	margin:0px;
+	padding: 0px;
+}
+
+header.main{
+	background-color: #0071B3;
+}
+
+table.main{
+	width: 100%;
+}
+
+table.pad td{
+	padding: 15px 5px 10px;
+}
+
+.BottomPanel{
+	background-color: #241933;
+	color: wheat;
+	min-height:50px;
+
+	position:relative;
+	height:20px;
+
+	line-height: 20px;
+	vertical-align:middle;
+
+	border-top: 1px solid #e8e9e8;
+	width:100%;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #00FF47;
+	text-shadow: 1px 1px 2px black, 0 0 7px blue; /* Параметры тени */
+}
+a:hover,
+a:active,
+a:focus {
+	text-decoration: underline;
+}
+
+.description{
+	color: #8185f4;
+}
+
+.form-checkbox+label{
+	 display: inline-block;
+	 width: 8px;
+	 height: 8px;
+	 outline:1px solid #898989;
+	 border:2px solid #fff;
+	 background-color: #fff;
+	 border-radius: 2px;
+ }
+
+.form-checkbox, .form-radio {
+	display:none;
+}
+
+.form-checkbox:checked + label{
+	background-color: #00cb1c;
+}
+
+.form-radio:checked + label:before{
+	background-color: #00cb1c;
+ }
+
+.form-radio+label:before{
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	outline:1px solid #898989;
+	border:2px solid #fff;
+	background-color: #fff;
+	border-radius: 10px;
+	margin-right: 5px;
+}
