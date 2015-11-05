@@ -6,11 +6,6 @@
  * Omega2 theme.
  */
 
-/*function omega_2_theme_registry_alter(&$theme_registry) {
-	if (isset($theme_registry['checkbox'])) {
-	}
-}*/
-
 function omega_2_checkbox($variables) {
 	$element = $variables['element'];
 	$element['#attributes']['type'] = 'checkbox';
@@ -38,13 +33,6 @@ function omega_2_radios($variables){
 	if (isset($element['#attributes']['title'])) {
 		$attributes['title'] = $element['#attributes']['title'];
 	}
-	/*if(isset($element['#options'])){
-		$res = array();
-		foreach ($element['#options'] as $name){
-			$res[] = str_replace("/>", "/><label for=\"edit-event-radio-{$element[$name]['return_value']}\"></label>", $element[$name]['#children']);
-		}
-		$element['#children'] = implode(' ', $res);
-	}*/
 
 	return '<div' . drupal_attributes($attributes) . '>' . (!empty($element['#children']) ? $element['#children'] : '') . '</div>';
 }
