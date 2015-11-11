@@ -51,7 +51,7 @@ a:focus {
 	 width: 8px;
 	 height: 8px;
 	 outline:1px solid #898989;
-	 border:2px solid #fff;
+	 border:3px solid #fff;
 	 background-color: #fff;
 	 border-radius: 2px;
  }
@@ -70,7 +70,7 @@ a:focus {
 }
 
 .input_omega2:checked + label:before{
-	background-color: #00cb1c;
+	background-color: #0c0ca2;
  }
 
 .input_omega2+label:before{
@@ -78,9 +78,9 @@ a:focus {
 	display: inline-block;
 	width: 8px;
 	height: 8px;
-	outline:1px solid #898989;
+	o88utline:1px solid #d7d7d7;
 	border:2px solid #fff;
-	background-color: #fff;
+	background-color: #e4e4e4;
 	border-radius: 10px;
 	margin-right: 5px;
 }

@@ -23,3 +23,7 @@ function omega_2_checkbox($variables) {
 function omega_2_preprocess_radio(&$variables){
 	$variables['element']['#attributes']['class'][] = 'input_omega2';
 }
+
+function omega_2_node($var){
+	$ff = 55;
+}
