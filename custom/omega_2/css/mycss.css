@@ -56,19 +56,24 @@ a:focus {
 	 border-radius: 2px;
  }
 
-.form-checkbox, .form-radio {
+.form-checkbox, .input_omega2{
 	display:none;
 }
-
 .form-checkbox:checked + label{
 	background-color: #00cb1c;
 }
 
-.form-radio:checked + label:before{
+.input_omega2 + label{
+	padding: 1px 10px 1px 2px;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+}
+
+.input_omega2:checked + label:before{
 	background-color: #00cb1c;
  }
 
-.form-radio+label:before{
+.input_omega2+label:before{
 	content: "";
 	display: inline-block;
 	width: 8px;

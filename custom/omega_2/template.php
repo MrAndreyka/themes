@@ -20,19 +20,6 @@ function omega_2_checkbox($variables) {
 	return '<input' . drupal_attributes($element['#attributes']) . ' /><label for="edit-event-box"></label>';
 }
 
-function omega_2_radios($variables){
-	$element = $variables['element'];
-	$attributes = array();
-	if (isset($element['#id'])) {
-		$attributes['id'] = $element['#id'];
-	}
-	$attributes['class'] = 'form-radios';
-	if (!empty($element['#attributes']['class'])) {
-		$attributes['class'] .= ' ' . implode(' ', $element['#attributes']['class']);
-	}
-	if (isset($element['#attributes']['title'])) {
-		$attributes['title'] = $element['#attributes']['title'];
-	}
-
-	return '<div' . drupal_attributes($attributes) . '>' . (!empty($element['#children']) ? $element['#children'] : '') . '</div>';
+function omega_2_preprocess_radio(&$variables){
+	$variables['element']['#attributes']['class'][] = 'input_omega2';
 }
