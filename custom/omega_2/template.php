@@ -24,6 +24,26 @@ function omega_2_preprocess_radio(&$variables){
 	$variables['element']['#attributes']['class'][] = 'input_omega2';
 }
 
-function omega_2_node($var){
-	$ff = 55;
+/*function omega_2_preprocess_block(&$vars) {
+	$block = $vars['block'];
+
+	// Create css id attribute based on 'Block title' when available.
+	if (!empty($block->title)) {
+		// Create the variable and ensure that it is correctly formatted with mytheme_id_safe function
+		$cssid = omega_2_id_safe($block->title);
+	}
+	else  {
+		// If no "Block title", create css id attribute the traditional way.
+		$cssid = "block-$block->module-$block->delta";
+	}
+	$vars['block_html_id'] = $cssid;
 }
+
+function omega_2_id_safe($string) { //change mytheme to your theme name
+	if (is_numeric($string{0})) {
+		// If the first character is numeric, add 'n' in front
+		$string = 'n'. $string;
+	}
+	return strtolower(preg_replace('/[^a-zA-Z0-9-]+/', '-', $string));
+}
+*/

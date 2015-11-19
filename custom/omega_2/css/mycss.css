@@ -40,27 +40,61 @@ a:hover,
 a:active,
 a:focus {
 	text-decoration: underline;
+	color: #00ffc8;
+}
+
+h1,h2{
+	text-align: center;
 }
 
 .description{
 	color: #8185f4;
 }
 
+.form-item{
+	padding: 2px 7px 5px;
+	margin: 2px 0px;
+	margin-bottom: 0px;
+}
+
+article.node{
+	border: 2px solid #dccbec;
+	padding: 0px 7px 5px;
+	margin: 2px 0px;
+}
+
+.node__submitted{
+	 font-size: 75%;
+	 color: lightslategray;
+ }
+
+.node__submitted a{
+	color: lightblue;
+
+}
+
+.comments{
+	background:lemonchiffon;
+	padding: 3px;
+	border: 1px solid #ffc18c;
+	border-radius: 10px;
+}
+
 .form-checkbox+label{
 	 display: inline-block;
 	 width: 8px;
 	 height: 8px;
-	 outline:1px solid #898989;
-	 border:3px solid #fff;
+	 border:2px solid #bbbbbb;
 	 background-color: #fff;
-	 border-radius: 2px;
+	 border-radius: 3px;
  }
 
 .form-checkbox, .input_omega2{
 	display:none;
 }
 .form-checkbox:checked + label{
-	background-color: #00cb1c;
+	background-color: #1e6d8a;
+	border:2px solid #b7b5ff;
 }
 
 .input_omega2 + label{
@@ -70,7 +104,7 @@ a:focus {
 }
 
 .input_omega2:checked + label:before{
-	background-color: #0c0ca2;
+	background-color: #1e6d8a;
  }
 
 .input_omega2+label:before{
@@ -78,9 +112,8 @@ a:focus {
 	display: inline-block;
 	width: 8px;
 	height: 8px;
-	o88utline:1px solid #d7d7d7;
-	border:2px solid #fff;
-	background-color: #e4e4e4;
+	border:2px solid #898989;
+	background-color: #fff;
 	border-radius: 10px;
 	margin-right: 5px;
 }
